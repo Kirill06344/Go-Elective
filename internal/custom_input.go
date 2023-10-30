@@ -1,4 +1,4 @@
-package main
+package internal
 
 import (
 	"bufio"
@@ -12,7 +12,7 @@ func ReadFloat64(reader *bufio.Reader) (float64, error) {
 	if err != nil {
 		return 0, err
 	}
-	remSpc := str[:len(str)-1]
+	remSpc := strings.TrimSpace(str)
 	var res float64
 	if res, err = strconv.ParseFloat(remSpc, 64); err != nil {
 		return 0, fmt.Errorf("please, enter a numeric value")
@@ -21,12 +21,14 @@ func ReadFloat64(reader *bufio.Reader) (float64, error) {
 }
 
 func ReadOperation(reader *bufio.Reader) (byte, error) {
-	op, err := reader.ReadBytes('\n')
+	op, err := reader.ReadString('\n')
 	if err != nil {
 		return 0, err
 	}
 
-	if len(op) != 2 || !strings.Contains("+/*/", string(op[0])) {
+	op = strings.TrimSpace(op)
+
+	if len(op) != 1 || !strings.Contains("+/*/", string(op[0])) {
 		return 0, fmt.Errorf("please, use symbols +,-,* or /")
 	}
 
