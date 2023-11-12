@@ -2,29 +2,25 @@ package main
 
 import (
 	"GoBasics/pkg/calculations"
-
-	log "github.com/sirupsen/logrus"
-
+	"flag"
 	"fmt"
-	"os"
 	"strconv"
 )
 
-func init() {
-	log.SetLevel(log.InfoLevel)
-}
-
 func main() {
-	if len(os.Args) != 2 {
+	usingLogger := flag.Bool("log", false, "using logger")
+	flag.Parse()
+	if len(flag.Args()) != 1 {
 		return
 	}
-	n, err := strconv.ParseInt(os.Args[1], 10, 64)
+
+	n, err := strconv.ParseInt(flag.Args()[0], 10, 64)
 	if err != nil {
-		log.Error(err)
+		fmt.Println(err)
 		return
 	}
-	log.Info("Start calculations...")
-	log.Printf("Calculate %d!", n)
-	answer := calculations.Calculate(n, false)
-	fmt.Println(answer)
+
+	answer := calculations.Calculate(n, *usingLogger)
+	fmt.Printf("Factorial of %d: %d \n", n, answer)
+
 }
