@@ -11,7 +11,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: move file to test
-        run: mv cmd/lab2/k_largest.go /test
+        run: mv cmd/02_heap/k_largest.go /test
 
       - name: Run test
         working-directory: /test
