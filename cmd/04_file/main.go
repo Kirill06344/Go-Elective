@@ -29,7 +29,7 @@ func main() {
 	}
 
 	for _, item := range files {
-		contains, err := substringSearch.Contains(item.Filename, item.Substring)
+		contains, err := substringSearch.Contains(item.Filename, item.Substring, true)
 		fmt.Printf("File %s: \n", item.Filename)
 		if err != nil {
 			fmt.Println(err)
