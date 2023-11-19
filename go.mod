@@ -8,6 +8,6 @@ require (
 )
 
 require (
-	github.com/Kirill06344/sequenceLib v0.0.2 // indirect
+	github.com/Kirill06344/sequenceLib v0.0.3 // indirect
 	golang.org/x/sys v0.14.0 // indirect
 )
