@@ -1,0 +1,1489 @@
+
+before walk (*List).add
+.   DCL # linked list.go:13:2
+.   .   NAME-main.newNode esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*Node tc(1) # linked list.go:13:2
+.   AS Def tc(1) # linked list.go:13:10
+.   .   NAME-main.newNode esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*Node tc(1) # linked list.go:13:2
+.   .   PTRLIT esc(h) PTR-*Node tc(1) # linked list.go:13:13
+.   .   .   STRUCTLIT main.Node tc(1) # linked list.go:13:18
+.   .   .   STRUCTLIT-List
+.   .   .   .   STRUCTKEY main.data # linked list.go:13:19
+.   .   .   .   .   NAME-main.value esc(no) Class:PPARAM Offset:0 OnStack Used int tc(1) # linked list.go:12:20
+.   IF tc(1) # linked list.go:15:2
+.   IF-Cond
+.   .   EQ bool tc(1) # linked list.go:15:12
+.   .   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:15:6
+.   .   .   .   NAME-main.l esc(no) Class:PPARAM Offset:0 OnStack Used PTR-*List tc(1) # linked list.go:12:7
+.   .   .   NIL PTR-*Node tc(1) # linked list.go:15:15
+.   IF-Body
+.   .   AS tc(1) # linked list.go:16:10
+.   .   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:16:4
+.   .   .   .   NAME-main.l esc(no) Class:PPARAM Offset:0 OnStack Used PTR-*List tc(1) # linked list.go:12:7
+.   .   .   NAME-main.newNode esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*Node tc(1) # linked list.go:13:2
+.   .   RETURN tc(1) # linked list.go:17:3
+.   DCL # linked list.go:20:2
+.   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*Node tc(1) # linked list.go:20:2
+.   AS Def tc(1) # linked list.go:20:7
+.   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*Node tc(1) # linked list.go:20:2
+.   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:20:11
+.   .   .   NAME-main.l esc(no) Class:PPARAM Offset:0 OnStack Used PTR-*List tc(1) # linked list.go:12:7
+.   FOR tc(1) # linked list.go:21:2
+.   FOR-Cond
+.   .   NE bool tc(1) # linked list.go:21:16
+.   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:21:10
+.   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*Node tc(1) # linked list.go:20:2
+.   .   .   NIL PTR-*Node tc(1) # linked list.go:21:19
+.   FOR-Post
+.   .   BLOCK # linked list.go:22:8
+.   FOR-Body
+.   .   AS tc(1) # linked list.go:22:8
+.   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*Node tc(1) # linked list.go:20:2
+.   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:22:14
+.   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*Node tc(1) # linked list.go:20:2
+.   AS tc(1) # linked list.go:25:12
+.   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:25:6
+.   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*Node tc(1) # linked list.go:20:2
+.   .   NAME-main.newNode esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*Node tc(1) # linked list.go:13:2
+after walk (*List).add
+.   DCL # linked list.go:13:2
+.   .   NAME-main.newNode esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*Node tc(1) # linked list.go:13:2
+.   AS-init
+.   .   AS tc(1) # linked list.go:13:13
+.   .   .   NAME-main..autotmp_4 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used PTR-*Node tc(1) # linked list.go:13:13
+.   .   .   NEW esc(h) NonNil PTR-*Node tc(1) # linked list.go:13:13
+.   .   .   .   TYPE main.Node Class:PEXTERN Offset:0 type main.Node tc(1) # linked list.go:3:6
+.   .   AS tc(1) # linked list.go:13:13
+.   .   .   DEREF main.Node tc(1) # linked list.go:13:13
+.   .   .   .   NAME-main..autotmp_4 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used PTR-*Node tc(1) # linked list.go:13:13
+.   .   BLOCK tc(1) # linked list.go:13:19
+.   .   BLOCK-List
+.   .   .   AS tc(1) # linked list.go:13:19
+.   .   .   .   DOT main.data int tc(1) # linked list.go:13:19
+.   .   .   .   .   DEREF main.Node tc(1) # linked list.go:13:13
+.   .   .   .   .   .   NAME-main..autotmp_4 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used PTR-*Node tc(1) # linked list.go:13:13
+.   .   .   .   NAME-main.value esc(no) Class:PPARAM Offset:0 OnStack Used int tc(1) # linked list.go:12:20
+.   AS Def tc(1) # linked list.go:13:10
+.   .   NAME-main.newNode esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*Node tc(1) # linked list.go:13:2
+.   .   NAME-main..autotmp_4 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used PTR-*Node tc(1) # linked list.go:13:13
+.   IF tc(1) # linked list.go:15:2
+.   IF-Cond
+.   .   EQ bool tc(1) # linked list.go:15:12
+.   .   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:15:6
+.   .   .   .   NAME-main.l esc(no) Class:PPARAM Offset:0 OnStack Used PTR-*List tc(1) # linked list.go:12:7
+.   .   .   NIL PTR-*Node tc(1) # linked list.go:15:15
+.   IF-Body
+.   .   AS tc(1) # linked list.go:16:10
+.   .   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:16:4
+.   .   .   .   NAME-main.l esc(no) Class:PPARAM Offset:0 OnStack Used PTR-*List tc(1) # linked list.go:12:7
+.   .   .   NAME-main.newNode esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*Node tc(1) # linked list.go:13:2
+.   .   RETURN tc(1) # linked list.go:17:3
+.   DCL # linked list.go:20:2
+.   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*Node tc(1) # linked list.go:20:2
+.   AS Def tc(1) # linked list.go:20:7
+.   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*Node tc(1) # linked list.go:20:2
+.   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:20:11
+.   .   .   NAME-main.l esc(no) Class:PPARAM Offset:0 OnStack Used PTR-*List tc(1) # linked list.go:12:7
+.   FOR tc(1) # linked list.go:21:2
+.   FOR-Cond
+.   .   NE bool tc(1) # linked list.go:21:16
+.   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:21:10
+.   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*Node tc(1) # linked list.go:20:2
+.   .   .   NIL PTR-*Node tc(1) # linked list.go:21:19
+.   FOR-Post
+.   .   BLOCK # linked list.go:22:8
+.   FOR-Body
+.   .   AS tc(1) # linked list.go:22:8
+.   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*Node tc(1) # linked list.go:20:2
+.   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:22:14
+.   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*Node tc(1) # linked list.go:20:2
+.   AS tc(1) # linked list.go:25:12
+.   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:25:6
+.   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*Node tc(1) # linked list.go:20:2
+.   .   NAME-main.newNode esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*Node tc(1) # linked list.go:13:2
+
+before walk (*List).remove
+.   IF tc(1) # linked list.go:29:2
+.   IF-Cond
+.   .   EQ bool tc(1) # linked list.go:29:12
+.   .   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:29:6
+.   .   .   .   NAME-main.l esc(no) Class:PPARAM Offset:0 OnStack Used PTR-*List tc(1) # linked list.go:28:7
+.   .   .   NIL PTR-*Node tc(1) # linked list.go:29:15
+.   IF-Body
+.   .   RETURN tc(1) # linked list.go:30:3
+.   IF tc(1) # linked list.go:33:2
+.   IF-Cond
+.   .   EQ bool tc(1) # linked list.go:33:17
+.   .   .   DOTPTR main.data int tc(1) # linked list.go:33:11
+.   .   .   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:33:6
+.   .   .   .   .   NAME-main.l esc(no) Class:PPARAM Offset:0 OnStack Used PTR-*List tc(1) # linked list.go:28:7
+.   .   .   NAME-main.value esc(no) Class:PPARAM Offset:0 OnStack Used int tc(1) # linked list.go:28:23
+.   IF-Body
+.   .   AS tc(1) # linked list.go:34:10
+.   .   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:34:4
+.   .   .   .   NAME-main.l esc(no) Class:PPARAM Offset:0 OnStack Used PTR-*List tc(1) # linked list.go:28:7
+.   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:34:18
+.   .   .   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:34:13
+.   .   .   .   .   NAME-main.l esc(no) Class:PPARAM Offset:0 OnStack Used PTR-*List tc(1) # linked list.go:28:7
+.   .   RETURN tc(1) # linked list.go:35:3
+.   DCL # linked list.go:38:2
+.   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*Node tc(1) # linked list.go:38:2
+.   AS Def tc(1) # linked list.go:38:7
+.   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*Node tc(1) # linked list.go:38:2
+.   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:38:11
+.   .   .   NAME-main.l esc(no) Class:PPARAM Offset:0 OnStack Used PTR-*List tc(1) # linked list.go:28:7
+.   FOR tc(1) # linked list.go:39:2
+.   FOR-Cond
+.   .   CONVNOP-init
+.   .   .   AS tc(1) # linked list.go:39:23
+.   .   .   .   NAME-main..autotmp_3 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used bool tc(1) # linked list.go:39:23
+.   .   .   .   NE bool tc(1) # linked list.go:39:16
+.   .   .   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:39:10
+.   .   .   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*Node tc(1) # linked list.go:38:2
+.   .   .   .   .   NIL PTR-*Node tc(1) # linked list.go:39:19
+.   .   .   IF # linked list.go:39:23
+.   .   .   IF-Cond
+.   .   .   .   NAME-main..autotmp_3 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used bool tc(1) # linked list.go:39:23
+.   .   .   IF-Body
+.   .   .   .   AS tc(1) # linked list.go:39:23
+.   .   .   .   .   NAME-main..autotmp_3 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used bool tc(1) # linked list.go:39:23
+.   .   .   .   .   NE bool tc(1) # linked list.go:39:41
+.   .   .   .   .   .   DOTPTR main.data int tc(1) # linked list.go:39:35
+.   .   .   .   .   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:39:30
+.   .   .   .   .   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*Node tc(1) # linked list.go:38:2
+.   .   .   .   .   .   NAME-main.value esc(no) Class:PPARAM Offset:0 OnStack Used int tc(1) # linked list.go:28:23
+.   .   CONVNOP bool tc(1) # linked list.go:39:2
+.   .   .   NAME-main..autotmp_3 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used bool tc(1) # linked list.go:39:23
+.   FOR-Post
+.   .   BLOCK # linked list.go:40:8
+.   FOR-Body
+.   .   AS tc(1) # linked list.go:40:8
+.   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*Node tc(1) # linked list.go:38:2
+.   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:40:14
+.   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*Node tc(1) # linked list.go:38:2
+.   IF tc(1) # linked list.go:43:2
+.   IF-Cond
+.   .   NE bool tc(1) # linked list.go:43:15
+.   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:43:9
+.   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*Node tc(1) # linked list.go:38:2
+.   .   .   NIL PTR-*Node tc(1) # linked list.go:43:18
+.   IF-Body
+.   .   AS tc(1) # linked list.go:44:13
+.   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:44:7
+.   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*Node tc(1) # linked list.go:38:2
+.   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:44:24
+.   .   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:44:19
+.   .   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*Node tc(1) # linked list.go:38:2
+after walk (*List).remove
+.   IF tc(1) # linked list.go:29:2
+.   IF-Cond
+.   .   EQ bool tc(1) # linked list.go:29:12
+.   .   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:29:6
+.   .   .   .   NAME-main.l esc(no) Class:PPARAM Offset:0 OnStack Used PTR-*List tc(1) # linked list.go:28:7
+.   .   .   NIL PTR-*Node tc(1) # linked list.go:29:15
+.   IF-Body
+.   .   RETURN tc(1) # linked list.go:30:3
+.   IF tc(1) # linked list.go:33:2
+.   IF-Cond
+.   .   EQ bool tc(1) # linked list.go:33:17
+.   .   .   DOTPTR main.data int tc(1) # linked list.go:33:11
+.   .   .   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:33:6
+.   .   .   .   .   NAME-main.l esc(no) Class:PPARAM Offset:0 OnStack Used PTR-*List tc(1) # linked list.go:28:7
+.   .   .   NAME-main.value esc(no) Class:PPARAM Offset:0 OnStack Used int tc(1) # linked list.go:28:23
+.   IF-Body
+.   .   AS tc(1) # linked list.go:34:10
+.   .   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:34:4
+.   .   .   .   NAME-main.l esc(no) Class:PPARAM Offset:0 OnStack Used PTR-*List tc(1) # linked list.go:28:7
+.   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:34:18
+.   .   .   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:34:13
+.   .   .   .   .   NAME-main.l esc(no) Class:PPARAM Offset:0 OnStack Used PTR-*List tc(1) # linked list.go:28:7
+.   .   RETURN tc(1) # linked list.go:35:3
+.   DCL # linked list.go:38:2
+.   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*Node tc(1) # linked list.go:38:2
+.   AS Def tc(1) # linked list.go:38:7
+.   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*Node tc(1) # linked list.go:38:2
+.   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:38:11
+.   .   .   NAME-main.l esc(no) Class:PPARAM Offset:0 OnStack Used PTR-*List tc(1) # linked list.go:28:7
+.   FOR tc(1) # linked list.go:39:2
+.   FOR-Cond
+.   .   CONVNOP-init
+.   .   .   AS tc(1) # linked list.go:39:23
+.   .   .   .   NAME-main..autotmp_3 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used bool tc(1) # linked list.go:39:23
+.   .   .   .   NE bool tc(1) # linked list.go:39:16
+.   .   .   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:39:10
+.   .   .   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*Node tc(1) # linked list.go:38:2
+.   .   .   .   .   NIL PTR-*Node tc(1) # linked list.go:39:19
+.   .   .   IF # linked list.go:39:23
+.   .   .   IF-Cond
+.   .   .   .   NAME-main..autotmp_3 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used bool tc(1) # linked list.go:39:23
+.   .   .   IF-Body
+.   .   .   .   AS tc(1) # linked list.go:39:23
+.   .   .   .   .   NAME-main..autotmp_3 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used bool tc(1) # linked list.go:39:23
+.   .   .   .   .   NE bool tc(1) # linked list.go:39:41
+.   .   .   .   .   .   DOTPTR main.data int tc(1) # linked list.go:39:35
+.   .   .   .   .   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:39:30
+.   .   .   .   .   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*Node tc(1) # linked list.go:38:2
+.   .   .   .   .   .   NAME-main.value esc(no) Class:PPARAM Offset:0 OnStack Used int tc(1) # linked list.go:28:23
+.   .   CONVNOP bool tc(1) # linked list.go:39:23
+.   .   .   NAME-main..autotmp_3 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used bool tc(1) # linked list.go:39:23
+.   FOR-Post
+.   .   BLOCK # linked list.go:40:8
+.   FOR-Body
+.   .   AS tc(1) # linked list.go:40:8
+.   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*Node tc(1) # linked list.go:38:2
+.   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:40:14
+.   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*Node tc(1) # linked list.go:38:2
+.   IF tc(1) # linked list.go:43:2
+.   IF-Cond
+.   .   NE bool tc(1) # linked list.go:43:15
+.   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:43:9
+.   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*Node tc(1) # linked list.go:38:2
+.   .   .   NIL PTR-*Node tc(1) # linked list.go:43:18
+.   IF-Body
+.   .   AS tc(1) # linked list.go:44:13
+.   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:44:7
+.   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*Node tc(1) # linked list.go:38:2
+.   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:44:24
+.   .   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:44:19
+.   .   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*Node tc(1) # linked list.go:38:2
+
+before walk main
+.   DCL # linked list.go:49:2
+.   .   NAME-main.list esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*List tc(1) # linked list.go:49:2
+.   AS Def tc(1) # linked list.go:49:7
+.   .   NAME-main.list esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*List tc(1) # linked list.go:49:2
+.   .   PTRLIT esc(no) PTR-*List tc(1) # linked list.go:49:10
+.   .   .   STRUCTLIT main.List tc(1) # linked list.go:49:15
+.   DCL # linked list.go:50:10
+.   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:50:10 linked list.go:12:7
+.   DCL # linked list.go:50:10
+.   .   NAME-main.value esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used int tc(1) # linked list.go:50:10 linked list.go:12:20
+.   AS2 Def tc(1) # linked list.go:50:10
+.   AS2-Lhs
+.   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:50:10 linked list.go:12:7
+.   .   NAME-main.value esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used int tc(1) # linked list.go:50:10 linked list.go:12:20
+.   AS2-Rhs
+.   .   NAME-main.list esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*List tc(1) # linked list.go:49:2
+.   .   LITERAL-1 int tc(1) # linked list.go:50:11
+.   INLMARK # +linked list.go:50:10
+.   DCL # linked list.go:50:10 linked list.go:13:2
+.   .   NAME-main.newNode esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:50:10 linked list.go:13:2
+.   AS Def tc(1) # linked list.go:50:10 linked list.go:13:10
+.   .   NAME-main.newNode esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:50:10 linked list.go:13:2
+.   .   PTRLIT esc(h) PTR-*Node tc(1) # linked list.go:50:10 linked list.go:13:13
+.   .   .   STRUCTLIT main.Node tc(1) # linked list.go:50:10 linked list.go:13:18
+.   .   .   STRUCTLIT-List
+.   .   .   .   STRUCTKEY main.data # linked list.go:50:10 linked list.go:13:19
+.   .   .   .   .   NAME-main.value esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used int tc(1) # linked list.go:50:10 linked list.go:12:20
+.   IF tc(1) # linked list.go:50:10 linked list.go:15:2
+.   IF-Cond
+.   .   EQ bool tc(1) # linked list.go:50:10 linked list.go:15:12
+.   .   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:50:10 linked list.go:15:6
+.   .   .   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:50:10 linked list.go:12:7
+.   .   .   NIL PTR-*Node tc(1) # linked list.go:50:10 linked list.go:15:15
+.   IF-Body
+.   .   AS tc(1) # linked list.go:50:10 linked list.go:16:10
+.   .   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:50:10 linked list.go:16:4
+.   .   .   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:50:10 linked list.go:12:7
+.   .   .   NAME-main.newNode esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:50:10 linked list.go:13:2
+.   .   GOTO main..i0 tc(1) # linked list.go:50:10
+.   DCL # linked list.go:50:10 linked list.go:20:2
+.   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:50:10 linked list.go:20:2
+.   AS Def tc(1) # linked list.go:50:10 linked list.go:20:7
+.   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:50:10 linked list.go:20:2
+.   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:50:10 linked list.go:20:11
+.   .   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:50:10 linked list.go:12:7
+.   FOR tc(1) # linked list.go:50:10 linked list.go:21:2
+.   FOR-Cond
+.   .   NE bool tc(1) # linked list.go:50:10 linked list.go:21:16
+.   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:50:10 linked list.go:21:10
+.   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:50:10 linked list.go:20:2
+.   .   .   NIL PTR-*Node tc(1) # linked list.go:50:10 linked list.go:21:19
+.   FOR-Post
+.   .   BLOCK # linked list.go:50:10 linked list.go:22:8
+.   FOR-Body
+.   .   AS tc(1) # linked list.go:50:10 linked list.go:22:8
+.   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:50:10 linked list.go:20:2
+.   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:50:10 linked list.go:22:14
+.   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:50:10 linked list.go:20:2
+.   AS tc(1) # linked list.go:50:10 linked list.go:25:12
+.   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:50:10 linked list.go:25:6
+.   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:50:10 linked list.go:20:2
+.   .   NAME-main.newNode esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:50:10 linked list.go:13:2
+.   LABEL main..i0 # linked list.go:50:10
+.   DCL # linked list.go:51:10
+.   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:51:10 linked list.go:12:7
+.   DCL # linked list.go:51:10
+.   .   NAME-main.value esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used int tc(1) # linked list.go:51:10 linked list.go:12:20
+.   AS2 Def tc(1) # linked list.go:51:10
+.   AS2-Lhs
+.   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:51:10 linked list.go:12:7
+.   .   NAME-main.value esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used int tc(1) # linked list.go:51:10 linked list.go:12:20
+.   AS2-Rhs
+.   .   NAME-main.list esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*List tc(1) # linked list.go:49:2
+.   .   LITERAL-2 int tc(1) # linked list.go:51:11
+.   INLMARK Index:1 # +linked list.go:51:10
+.   DCL # linked list.go:51:10 linked list.go:13:2
+.   .   NAME-main.newNode esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:51:10 linked list.go:13:2
+.   AS Def tc(1) # linked list.go:51:10 linked list.go:13:10
+.   .   NAME-main.newNode esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:51:10 linked list.go:13:2
+.   .   PTRLIT esc(h) PTR-*Node tc(1) # linked list.go:51:10 linked list.go:13:13
+.   .   .   STRUCTLIT main.Node tc(1) # linked list.go:51:10 linked list.go:13:18
+.   .   .   STRUCTLIT-List
+.   .   .   .   STRUCTKEY main.data # linked list.go:51:10 linked list.go:13:19
+.   .   .   .   .   NAME-main.value esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used int tc(1) # linked list.go:51:10 linked list.go:12:20
+.   IF tc(1) # linked list.go:51:10 linked list.go:15:2
+.   IF-Cond
+.   .   EQ bool tc(1) # linked list.go:51:10 linked list.go:15:12
+.   .   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:51:10 linked list.go:15:6
+.   .   .   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:51:10 linked list.go:12:7
+.   .   .   NIL PTR-*Node tc(1) # linked list.go:51:10 linked list.go:15:15
+.   IF-Body
+.   .   AS tc(1) # linked list.go:51:10 linked list.go:16:10
+.   .   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:51:10 linked list.go:16:4
+.   .   .   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:51:10 linked list.go:12:7
+.   .   .   NAME-main.newNode esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:51:10 linked list.go:13:2
+.   .   GOTO main..i1 tc(1) # linked list.go:51:10
+.   DCL # linked list.go:51:10 linked list.go:20:2
+.   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:51:10 linked list.go:20:2
+.   AS Def tc(1) # linked list.go:51:10 linked list.go:20:7
+.   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:51:10 linked list.go:20:2
+.   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:51:10 linked list.go:20:11
+.   .   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:51:10 linked list.go:12:7
+.   FOR tc(1) # linked list.go:51:10 linked list.go:21:2
+.   FOR-Cond
+.   .   NE bool tc(1) # linked list.go:51:10 linked list.go:21:16
+.   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:51:10 linked list.go:21:10
+.   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:51:10 linked list.go:20:2
+.   .   .   NIL PTR-*Node tc(1) # linked list.go:51:10 linked list.go:21:19
+.   FOR-Post
+.   .   BLOCK # linked list.go:51:10 linked list.go:22:8
+.   FOR-Body
+.   .   AS tc(1) # linked list.go:51:10 linked list.go:22:8
+.   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:51:10 linked list.go:20:2
+.   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:51:10 linked list.go:22:14
+.   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:51:10 linked list.go:20:2
+.   AS tc(1) # linked list.go:51:10 linked list.go:25:12
+.   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:51:10 linked list.go:25:6
+.   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:51:10 linked list.go:20:2
+.   .   NAME-main.newNode esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:51:10 linked list.go:13:2
+.   LABEL main..i1 # linked list.go:51:10
+.   DCL # linked list.go:52:10
+.   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:52:10 linked list.go:12:7
+.   DCL # linked list.go:52:10
+.   .   NAME-main.value esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used int tc(1) # linked list.go:52:10 linked list.go:12:20
+.   AS2 Def tc(1) # linked list.go:52:10
+.   AS2-Lhs
+.   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:52:10 linked list.go:12:7
+.   .   NAME-main.value esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used int tc(1) # linked list.go:52:10 linked list.go:12:20
+.   AS2-Rhs
+.   .   NAME-main.list esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*List tc(1) # linked list.go:49:2
+.   .   LITERAL-3 int tc(1) # linked list.go:52:11
+.   INLMARK Index:2 # +linked list.go:52:10
+.   DCL # linked list.go:52:10 linked list.go:13:2
+.   .   NAME-main.newNode esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:52:10 linked list.go:13:2
+.   AS Def tc(1) # linked list.go:52:10 linked list.go:13:10
+.   .   NAME-main.newNode esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:52:10 linked list.go:13:2
+.   .   PTRLIT esc(h) PTR-*Node tc(1) # linked list.go:52:10 linked list.go:13:13
+.   .   .   STRUCTLIT main.Node tc(1) # linked list.go:52:10 linked list.go:13:18
+.   .   .   STRUCTLIT-List
+.   .   .   .   STRUCTKEY main.data # linked list.go:52:10 linked list.go:13:19
+.   .   .   .   .   NAME-main.value esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used int tc(1) # linked list.go:52:10 linked list.go:12:20
+.   IF tc(1) # linked list.go:52:10 linked list.go:15:2
+.   IF-Cond
+.   .   EQ bool tc(1) # linked list.go:52:10 linked list.go:15:12
+.   .   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:52:10 linked list.go:15:6
+.   .   .   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:52:10 linked list.go:12:7
+.   .   .   NIL PTR-*Node tc(1) # linked list.go:52:10 linked list.go:15:15
+.   IF-Body
+.   .   AS tc(1) # linked list.go:52:10 linked list.go:16:10
+.   .   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:52:10 linked list.go:16:4
+.   .   .   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:52:10 linked list.go:12:7
+.   .   .   NAME-main.newNode esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:52:10 linked list.go:13:2
+.   .   GOTO main..i2 tc(1) # linked list.go:52:10
+.   DCL # linked list.go:52:10 linked list.go:20:2
+.   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:52:10 linked list.go:20:2
+.   AS Def tc(1) # linked list.go:52:10 linked list.go:20:7
+.   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:52:10 linked list.go:20:2
+.   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:52:10 linked list.go:20:11
+.   .   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:52:10 linked list.go:12:7
+.   FOR tc(1) # linked list.go:52:10 linked list.go:21:2
+.   FOR-Cond
+.   .   NE bool tc(1) # linked list.go:52:10 linked list.go:21:16
+.   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:52:10 linked list.go:21:10
+.   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:52:10 linked list.go:20:2
+.   .   .   NIL PTR-*Node tc(1) # linked list.go:52:10 linked list.go:21:19
+.   FOR-Post
+.   .   BLOCK # linked list.go:52:10 linked list.go:22:8
+.   FOR-Body
+.   .   AS tc(1) # linked list.go:52:10 linked list.go:22:8
+.   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:52:10 linked list.go:20:2
+.   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:52:10 linked list.go:22:14
+.   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:52:10 linked list.go:20:2
+.   AS tc(1) # linked list.go:52:10 linked list.go:25:12
+.   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:52:10 linked list.go:25:6
+.   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:52:10 linked list.go:20:2
+.   .   NAME-main.newNode esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:52:10 linked list.go:13:2
+.   LABEL main..i2 # linked list.go:52:10
+.   DCL # linked list.go:53:10
+.   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:53:10 linked list.go:12:7
+.   DCL # linked list.go:53:10
+.   .   NAME-main.value esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used int tc(1) # linked list.go:53:10 linked list.go:12:20
+.   AS2 Def tc(1) # linked list.go:53:10
+.   AS2-Lhs
+.   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:53:10 linked list.go:12:7
+.   .   NAME-main.value esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used int tc(1) # linked list.go:53:10 linked list.go:12:20
+.   AS2-Rhs
+.   .   NAME-main.list esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*List tc(1) # linked list.go:49:2
+.   .   LITERAL-4 int tc(1) # linked list.go:53:11
+.   INLMARK Index:3 # +linked list.go:53:10
+.   DCL # linked list.go:53:10 linked list.go:13:2
+.   .   NAME-main.newNode esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:53:10 linked list.go:13:2
+.   AS Def tc(1) # linked list.go:53:10 linked list.go:13:10
+.   .   NAME-main.newNode esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:53:10 linked list.go:13:2
+.   .   PTRLIT esc(h) PTR-*Node tc(1) # linked list.go:53:10 linked list.go:13:13
+.   .   .   STRUCTLIT main.Node tc(1) # linked list.go:53:10 linked list.go:13:18
+.   .   .   STRUCTLIT-List
+.   .   .   .   STRUCTKEY main.data # linked list.go:53:10 linked list.go:13:19
+.   .   .   .   .   NAME-main.value esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used int tc(1) # linked list.go:53:10 linked list.go:12:20
+.   IF tc(1) # linked list.go:53:10 linked list.go:15:2
+.   IF-Cond
+.   .   EQ bool tc(1) # linked list.go:53:10 linked list.go:15:12
+.   .   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:53:10 linked list.go:15:6
+.   .   .   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:53:10 linked list.go:12:7
+.   .   .   NIL PTR-*Node tc(1) # linked list.go:53:10 linked list.go:15:15
+.   IF-Body
+.   .   AS tc(1) # linked list.go:53:10 linked list.go:16:10
+.   .   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:53:10 linked list.go:16:4
+.   .   .   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:53:10 linked list.go:12:7
+.   .   .   NAME-main.newNode esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:53:10 linked list.go:13:2
+.   .   GOTO main..i3 tc(1) # linked list.go:53:10
+.   DCL # linked list.go:53:10 linked list.go:20:2
+.   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:53:10 linked list.go:20:2
+.   AS Def tc(1) # linked list.go:53:10 linked list.go:20:7
+.   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:53:10 linked list.go:20:2
+.   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:53:10 linked list.go:20:11
+.   .   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:53:10 linked list.go:12:7
+.   FOR tc(1) # linked list.go:53:10 linked list.go:21:2
+.   FOR-Cond
+.   .   NE bool tc(1) # linked list.go:53:10 linked list.go:21:16
+.   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:53:10 linked list.go:21:10
+.   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:53:10 linked list.go:20:2
+.   .   .   NIL PTR-*Node tc(1) # linked list.go:53:10 linked list.go:21:19
+.   FOR-Post
+.   .   BLOCK # linked list.go:53:10 linked list.go:22:8
+.   FOR-Body
+.   .   AS tc(1) # linked list.go:53:10 linked list.go:22:8
+.   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:53:10 linked list.go:20:2
+.   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:53:10 linked list.go:22:14
+.   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:53:10 linked list.go:20:2
+.   AS tc(1) # linked list.go:53:10 linked list.go:25:12
+.   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:53:10 linked list.go:25:6
+.   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:53:10 linked list.go:20:2
+.   .   NAME-main.newNode esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:53:10 linked list.go:13:2
+.   LABEL main..i3 # linked list.go:53:10
+.   PRINTN tc(1) # linked list.go:55:9
+.   PRINTN-Args
+.   .   LITERAL-"Initial List: " string tc(1) # linked list.go:55:10
+.   DCL # linked list.go:56:11
+.   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:56:11 linked list.go:67:16
+.   AS2 Def tc(1) # linked list.go:56:11
+.   AS2-Lhs
+.   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:56:11 linked list.go:67:16
+.   AS2-Rhs
+.   .   NAME-main.list esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*List tc(1) # linked list.go:49:2
+.   INLMARK Index:4 # +linked list.go:56:11
+.   DCL # linked list.go:56:11 linked list.go:68:2
+.   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:56:11 linked list.go:68:2
+.   AS Def tc(1) # linked list.go:56:11 linked list.go:68:7
+.   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:56:11 linked list.go:68:2
+.   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:56:11 linked list.go:68:11
+.   .   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:56:11 linked list.go:67:16
+.   FOR tc(1) # linked list.go:56:11 linked list.go:69:2
+.   FOR-Cond
+.   .   NE bool tc(1) # linked list.go:56:11 linked list.go:69:11
+.   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:56:11 linked list.go:68:2
+.   .   .   NIL PTR-*Node tc(1) # linked list.go:56:11 linked list.go:69:14
+.   FOR-Post
+.   .   BLOCK # linked list.go:56:11 linked list.go:70:8
+.   FOR-Body
+.   .   PRINT tc(1) # linked list.go:56:11 linked list.go:70:8
+.   .   PRINT-Args
+.   .   .   DOTPTR main.data int tc(1) # linked list.go:56:11 linked list.go:70:13
+.   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:56:11 linked list.go:68:2
+.   .   .   LITERAL-", " string tc(1) # linked list.go:56:11 linked list.go:70:20
+.   .   AS tc(1) # linked list.go:56:11 linked list.go:71:8
+.   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:56:11 linked list.go:68:2
+.   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:56:11 linked list.go:71:14
+.   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:56:11 linked list.go:68:2
+.   PRINTN tc(1) # linked list.go:56:11 linked list.go:73:9
+.   LABEL main..i4 # linked list.go:56:11
+.   DCL # linked list.go:58:13
+.   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:58:13 linked list.go:28:7
+.   DCL # linked list.go:58:13
+.   .   NAME-main.value esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used int tc(1) # linked list.go:58:13 linked list.go:28:23
+.   AS2 Def tc(1) # linked list.go:58:13
+.   AS2-Lhs
+.   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:58:13 linked list.go:28:7
+.   .   NAME-main.value esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used int tc(1) # linked list.go:58:13 linked list.go:28:23
+.   AS2-Rhs
+.   .   NAME-main.list esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*List tc(1) # linked list.go:49:2
+.   .   LITERAL-2 int tc(1) # linked list.go:58:14
+.   INLMARK Index:5 # +linked list.go:58:13
+.   IF tc(1) # linked list.go:58:13 linked list.go:29:2
+.   IF-Cond
+.   .   EQ bool tc(1) # linked list.go:58:13 linked list.go:29:12
+.   .   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:58:13 linked list.go:29:6
+.   .   .   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:58:13 linked list.go:28:7
+.   .   .   NIL PTR-*Node tc(1) # linked list.go:58:13 linked list.go:29:15
+.   IF-Body
+.   .   GOTO main..i5 tc(1) # linked list.go:58:13
+.   IF tc(1) # linked list.go:58:13 linked list.go:33:2
+.   IF-Cond
+.   .   EQ bool tc(1) # linked list.go:58:13 linked list.go:33:17
+.   .   .   DOTPTR main.data int tc(1) # linked list.go:58:13 linked list.go:33:11
+.   .   .   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:58:13 linked list.go:33:6
+.   .   .   .   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:58:13 linked list.go:28:7
+.   .   .   NAME-main.value esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used int tc(1) # linked list.go:58:13 linked list.go:28:23
+.   IF-Body
+.   .   AS tc(1) # linked list.go:58:13 linked list.go:34:10
+.   .   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:58:13 linked list.go:34:4
+.   .   .   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:58:13 linked list.go:28:7
+.   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:58:13 linked list.go:34:18
+.   .   .   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:58:13 linked list.go:34:13
+.   .   .   .   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:58:13 linked list.go:28:7
+.   .   GOTO main..i5 tc(1) # linked list.go:58:13
+.   DCL # linked list.go:58:13 linked list.go:38:2
+.   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:58:13 linked list.go:38:2
+.   AS Def tc(1) # linked list.go:58:13 linked list.go:38:7
+.   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:58:13 linked list.go:38:2
+.   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:58:13 linked list.go:38:11
+.   .   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:58:13 linked list.go:28:7
+.   FOR tc(1) # linked list.go:58:13 linked list.go:39:2
+.   FOR-Cond
+.   .   CONVNOP-init
+.   .   .   AS tc(1) # linked list.go:58:13 linked list.go:39:23
+.   .   .   .   NAME-main..autotmp_29 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used bool tc(1) # linked list.go:58:13 linked list.go:39:23
+.   .   .   .   NE bool tc(1) # linked list.go:58:13 linked list.go:39:16
+.   .   .   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:58:13 linked list.go:39:10
+.   .   .   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:58:13 linked list.go:38:2
+.   .   .   .   .   NIL PTR-*Node tc(1) # linked list.go:58:13 linked list.go:39:19
+.   .   .   IF # linked list.go:58:13 linked list.go:39:23
+.   .   .   IF-Cond
+.   .   .   .   NAME-main..autotmp_29 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used bool tc(1) # linked list.go:58:13 linked list.go:39:23
+.   .   .   IF-Body
+.   .   .   .   AS tc(1) # linked list.go:58:13 linked list.go:39:23
+.   .   .   .   .   NAME-main..autotmp_29 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used bool tc(1) # linked list.go:58:13 linked list.go:39:23
+.   .   .   .   .   NE bool tc(1) # linked list.go:58:13 linked list.go:39:41
+.   .   .   .   .   .   DOTPTR main.data int tc(1) # linked list.go:58:13 linked list.go:39:35
+.   .   .   .   .   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:58:13 linked list.go:39:30
+.   .   .   .   .   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:58:13 linked list.go:38:2
+.   .   .   .   .   .   NAME-main.value esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used int tc(1) # linked list.go:58:13 linked list.go:28:23
+.   .   CONVNOP bool tc(1) # linked list.go:58:13 linked list.go:39:2
+.   .   .   NAME-main..autotmp_29 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used bool tc(1) # linked list.go:58:13 linked list.go:39:23
+.   FOR-Post
+.   .   BLOCK # linked list.go:58:13 linked list.go:40:8
+.   FOR-Body
+.   .   AS tc(1) # linked list.go:58:13 linked list.go:40:8
+.   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:58:13 linked list.go:38:2
+.   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:58:13 linked list.go:40:14
+.   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:58:13 linked list.go:38:2
+.   IF tc(1) # linked list.go:58:13 linked list.go:43:2
+.   IF-Cond
+.   .   NE bool tc(1) # linked list.go:58:13 linked list.go:43:15
+.   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:58:13 linked list.go:43:9
+.   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:58:13 linked list.go:38:2
+.   .   .   NIL PTR-*Node tc(1) # linked list.go:58:13 linked list.go:43:18
+.   IF-Body
+.   .   AS tc(1) # linked list.go:58:13 linked list.go:44:13
+.   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:58:13 linked list.go:44:7
+.   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:58:13 linked list.go:38:2
+.   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:58:13 linked list.go:44:24
+.   .   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:58:13 linked list.go:44:19
+.   .   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:58:13 linked list.go:38:2
+.   LABEL main..i5 # linked list.go:58:13
+.   PRINTN tc(1) # linked list.go:59:9
+.   PRINTN-Args
+.   .   LITERAL-"List after removing 2: " string tc(1) # linked list.go:59:10
+.   DCL # linked list.go:60:11
+.   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:60:11 linked list.go:67:16
+.   AS2 Def tc(1) # linked list.go:60:11
+.   AS2-Lhs
+.   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:60:11 linked list.go:67:16
+.   AS2-Rhs
+.   .   NAME-main.list esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*List tc(1) # linked list.go:49:2
+.   INLMARK Index:6 # +linked list.go:60:11
+.   DCL # linked list.go:60:11 linked list.go:68:2
+.   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:60:11 linked list.go:68:2
+.   AS Def tc(1) # linked list.go:60:11 linked list.go:68:7
+.   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:60:11 linked list.go:68:2
+.   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:60:11 linked list.go:68:11
+.   .   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:60:11 linked list.go:67:16
+.   FOR tc(1) # linked list.go:60:11 linked list.go:69:2
+.   FOR-Cond
+.   .   NE bool tc(1) # linked list.go:60:11 linked list.go:69:11
+.   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:60:11 linked list.go:68:2
+.   .   .   NIL PTR-*Node tc(1) # linked list.go:60:11 linked list.go:69:14
+.   FOR-Post
+.   .   BLOCK # linked list.go:60:11 linked list.go:70:8
+.   FOR-Body
+.   .   PRINT tc(1) # linked list.go:60:11 linked list.go:70:8
+.   .   PRINT-Args
+.   .   .   DOTPTR main.data int tc(1) # linked list.go:60:11 linked list.go:70:13
+.   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:60:11 linked list.go:68:2
+.   .   .   LITERAL-", " string tc(1) # linked list.go:60:11 linked list.go:70:20
+.   .   AS tc(1) # linked list.go:60:11 linked list.go:71:8
+.   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:60:11 linked list.go:68:2
+.   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:60:11 linked list.go:71:14
+.   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:60:11 linked list.go:68:2
+.   PRINTN tc(1) # linked list.go:60:11 linked list.go:73:9
+.   LABEL main..i6 # linked list.go:60:11
+.   DCL # linked list.go:62:13
+.   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:62:13 linked list.go:28:7
+.   DCL # linked list.go:62:13
+.   .   NAME-main.value esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used int tc(1) # linked list.go:62:13 linked list.go:28:23
+.   AS2 Def tc(1) # linked list.go:62:13
+.   AS2-Lhs
+.   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:62:13 linked list.go:28:7
+.   .   NAME-main.value esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used int tc(1) # linked list.go:62:13 linked list.go:28:23
+.   AS2-Rhs
+.   .   NAME-main.list esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*List tc(1) # linked list.go:49:2
+.   .   LITERAL-4 int tc(1) # linked list.go:62:14
+.   INLMARK Index:7 # +linked list.go:62:13
+.   IF tc(1) # linked list.go:62:13 linked list.go:29:2
+.   IF-Cond
+.   .   EQ bool tc(1) # linked list.go:62:13 linked list.go:29:12
+.   .   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:62:13 linked list.go:29:6
+.   .   .   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:62:13 linked list.go:28:7
+.   .   .   NIL PTR-*Node tc(1) # linked list.go:62:13 linked list.go:29:15
+.   IF-Body
+.   .   GOTO main..i7 tc(1) # linked list.go:62:13
+.   IF tc(1) # linked list.go:62:13 linked list.go:33:2
+.   IF-Cond
+.   .   EQ bool tc(1) # linked list.go:62:13 linked list.go:33:17
+.   .   .   DOTPTR main.data int tc(1) # linked list.go:62:13 linked list.go:33:11
+.   .   .   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:62:13 linked list.go:33:6
+.   .   .   .   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:62:13 linked list.go:28:7
+.   .   .   NAME-main.value esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used int tc(1) # linked list.go:62:13 linked list.go:28:23
+.   IF-Body
+.   .   AS tc(1) # linked list.go:62:13 linked list.go:34:10
+.   .   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:62:13 linked list.go:34:4
+.   .   .   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:62:13 linked list.go:28:7
+.   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:62:13 linked list.go:34:18
+.   .   .   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:62:13 linked list.go:34:13
+.   .   .   .   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:62:13 linked list.go:28:7
+.   .   GOTO main..i7 tc(1) # linked list.go:62:13
+.   DCL # linked list.go:62:13 linked list.go:38:2
+.   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:62:13 linked list.go:38:2
+.   AS Def tc(1) # linked list.go:62:13 linked list.go:38:7
+.   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:62:13 linked list.go:38:2
+.   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:62:13 linked list.go:38:11
+.   .   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:62:13 linked list.go:28:7
+.   FOR tc(1) # linked list.go:62:13 linked list.go:39:2
+.   FOR-Cond
+.   .   CONVNOP-init
+.   .   .   AS tc(1) # linked list.go:62:13 linked list.go:39:23
+.   .   .   .   NAME-main..autotmp_29 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used bool tc(1) # linked list.go:58:13 linked list.go:39:23
+.   .   .   .   NE bool tc(1) # linked list.go:62:13 linked list.go:39:16
+.   .   .   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:62:13 linked list.go:39:10
+.   .   .   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:62:13 linked list.go:38:2
+.   .   .   .   .   NIL PTR-*Node tc(1) # linked list.go:62:13 linked list.go:39:19
+.   .   .   IF # linked list.go:62:13 linked list.go:39:23
+.   .   .   IF-Cond
+.   .   .   .   NAME-main..autotmp_29 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used bool tc(1) # linked list.go:58:13 linked list.go:39:23
+.   .   .   IF-Body
+.   .   .   .   AS tc(1) # linked list.go:62:13 linked list.go:39:23
+.   .   .   .   .   NAME-main..autotmp_29 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used bool tc(1) # linked list.go:58:13 linked list.go:39:23
+.   .   .   .   .   NE bool tc(1) # linked list.go:62:13 linked list.go:39:41
+.   .   .   .   .   .   DOTPTR main.data int tc(1) # linked list.go:62:13 linked list.go:39:35
+.   .   .   .   .   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:62:13 linked list.go:39:30
+.   .   .   .   .   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:62:13 linked list.go:38:2
+.   .   .   .   .   .   NAME-main.value esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used int tc(1) # linked list.go:62:13 linked list.go:28:23
+.   .   CONVNOP bool tc(1) # linked list.go:62:13 linked list.go:39:2
+.   .   .   NAME-main..autotmp_29 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used bool tc(1) # linked list.go:58:13 linked list.go:39:23
+.   FOR-Post
+.   .   BLOCK # linked list.go:62:13 linked list.go:40:8
+.   FOR-Body
+.   .   AS tc(1) # linked list.go:62:13 linked list.go:40:8
+.   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:62:13 linked list.go:38:2
+.   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:62:13 linked list.go:40:14
+.   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:62:13 linked list.go:38:2
+.   IF tc(1) # linked list.go:62:13 linked list.go:43:2
+.   IF-Cond
+.   .   NE bool tc(1) # linked list.go:62:13 linked list.go:43:15
+.   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:62:13 linked list.go:43:9
+.   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:62:13 linked list.go:38:2
+.   .   .   NIL PTR-*Node tc(1) # linked list.go:62:13 linked list.go:43:18
+.   IF-Body
+.   .   AS tc(1) # linked list.go:62:13 linked list.go:44:13
+.   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:62:13 linked list.go:44:7
+.   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:62:13 linked list.go:38:2
+.   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:62:13 linked list.go:44:24
+.   .   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:62:13 linked list.go:44:19
+.   .   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:62:13 linked list.go:38:2
+.   LABEL main..i7 # linked list.go:62:13
+.   PRINTN tc(1) # linked list.go:63:9
+.   PRINTN-Args
+.   .   LITERAL-"List after removing 4: " string tc(1) # linked list.go:63:10
+.   DCL # linked list.go:64:11
+.   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:64:11 linked list.go:67:16
+.   AS2 Def tc(1) # linked list.go:64:11
+.   AS2-Lhs
+.   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:64:11 linked list.go:67:16
+.   AS2-Rhs
+.   .   NAME-main.list esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*List tc(1) # linked list.go:49:2
+.   INLMARK Index:8 # +linked list.go:64:11
+.   DCL # linked list.go:64:11 linked list.go:68:2
+.   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:64:11 linked list.go:68:2
+.   AS Def tc(1) # linked list.go:64:11 linked list.go:68:7
+.   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:64:11 linked list.go:68:2
+.   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:64:11 linked list.go:68:11
+.   .   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:64:11 linked list.go:67:16
+.   FOR tc(1) # linked list.go:64:11 linked list.go:69:2
+.   FOR-Cond
+.   .   NE bool tc(1) # linked list.go:64:11 linked list.go:69:11
+.   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:64:11 linked list.go:68:2
+.   .   .   NIL PTR-*Node tc(1) # linked list.go:64:11 linked list.go:69:14
+.   FOR-Post
+.   .   BLOCK # linked list.go:64:11 linked list.go:70:8
+.   FOR-Body
+.   .   PRINT tc(1) # linked list.go:64:11 linked list.go:70:8
+.   .   PRINT-Args
+.   .   .   DOTPTR main.data int tc(1) # linked list.go:64:11 linked list.go:70:13
+.   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:64:11 linked list.go:68:2
+.   .   .   LITERAL-", " string tc(1) # linked list.go:64:11 linked list.go:70:20
+.   .   AS tc(1) # linked list.go:64:11 linked list.go:71:8
+.   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:64:11 linked list.go:68:2
+.   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:64:11 linked list.go:71:14
+.   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:64:11 linked list.go:68:2
+.   PRINTN tc(1) # linked list.go:64:11 linked list.go:73:9
+.   LABEL main..i8 # linked list.go:64:11
+after walk main
+.   DCL # linked list.go:49:2
+.   .   NAME-main.list esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*List tc(1) # linked list.go:49:2
+.   AS-init
+.   .   AS tc(1) # linked list.go:49:10
+.   .   .   NAME-main..autotmp_31 esc(N) Class:PAUTO Offset:0 Addrtaken AutoTemp OnStack Used main.List tc(1) # linked list.go:49:10
+.   .   AS tc(1) # linked list.go:49:10
+.   .   .   NAME-main..autotmp_30 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used PTR-*List tc(1) # linked list.go:49:10
+.   .   .   ADDR PTR-*List tc(1) # linked list.go:49:10
+.   .   .   .   NAME-main..autotmp_31 esc(N) Class:PAUTO Offset:0 Addrtaken AutoTemp OnStack Used main.List tc(1) # linked list.go:49:10
+.   .   AS tc(1) # linked list.go:49:10
+.   .   .   DEREF main.List tc(1) # linked list.go:49:10
+.   .   .   .   NAME-main..autotmp_30 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used PTR-*List tc(1) # linked list.go:49:10
+.   AS Def tc(1) # linked list.go:49:7
+.   .   NAME-main.list esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*List tc(1) # linked list.go:49:2
+.   .   NAME-main..autotmp_30 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used PTR-*List tc(1) # linked list.go:49:10
+.   DCL # linked list.go:50:10
+.   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:50:10 linked list.go:12:7
+.   DCL # linked list.go:50:10
+.   .   NAME-main.value esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used int tc(1) # linked list.go:50:10 linked list.go:12:20
+.   BLOCK # linked list.go:50:10
+.   BLOCK-List
+.   .   AS tc(1) # linked list.go:50:10
+.   .   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:50:10 linked list.go:12:7
+.   .   .   NAME-main.list esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*List tc(1) # linked list.go:49:2
+.   .   AS tc(1) # linked list.go:50:10
+.   .   .   NAME-main.value esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used int tc(1) # linked list.go:50:10 linked list.go:12:20
+.   .   .   LITERAL-1 int tc(1) # linked list.go:50:11
+.   INLMARK # +linked list.go:50:10
+.   DCL # linked list.go:50:10 linked list.go:13:2
+.   .   NAME-main.newNode esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:50:10 linked list.go:13:2
+.   AS-init
+.   .   AS tc(1) # linked list.go:50:10 linked list.go:13:13
+.   .   .   NAME-main..autotmp_32 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used PTR-*Node tc(1) # linked list.go:50:10 linked list.go:13:13
+.   .   .   NEW esc(h) NonNil PTR-*Node tc(1) # linked list.go:50:10 linked list.go:13:13
+.   .   .   .   TYPE main.Node Class:PEXTERN Offset:0 type main.Node tc(1) # linked list.go:3:6
+.   .   AS tc(1) # linked list.go:50:10 linked list.go:13:13
+.   .   .   DEREF main.Node tc(1) # linked list.go:50:10 linked list.go:13:13
+.   .   .   .   NAME-main..autotmp_32 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used PTR-*Node tc(1) # linked list.go:50:10 linked list.go:13:13
+.   .   BLOCK tc(1) # linked list.go:50:10 linked list.go:13:19
+.   .   BLOCK-List
+.   .   .   AS tc(1) # linked list.go:50:10 linked list.go:13:19
+.   .   .   .   DOT main.data int tc(1) # linked list.go:50:10 linked list.go:13:19
+.   .   .   .   .   DEREF main.Node tc(1) # linked list.go:50:10 linked list.go:13:13
+.   .   .   .   .   .   NAME-main..autotmp_32 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used PTR-*Node tc(1) # linked list.go:50:10 linked list.go:13:13
+.   .   .   .   NAME-main.value esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used int tc(1) # linked list.go:50:10 linked list.go:12:20
+.   AS Def tc(1) # linked list.go:50:10 linked list.go:13:10
+.   .   NAME-main.newNode esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:50:10 linked list.go:13:2
+.   .   NAME-main..autotmp_32 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used PTR-*Node tc(1) # linked list.go:50:10 linked list.go:13:13
+.   IF tc(1) # linked list.go:50:10 linked list.go:15:2
+.   IF-Cond
+.   .   EQ bool tc(1) # linked list.go:50:10 linked list.go:15:12
+.   .   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:50:10 linked list.go:15:6
+.   .   .   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:50:10 linked list.go:12:7
+.   .   .   NIL PTR-*Node tc(1) # linked list.go:50:10 linked list.go:15:15
+.   IF-Body
+.   .   AS tc(1) # linked list.go:50:10 linked list.go:16:10
+.   .   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:50:10 linked list.go:16:4
+.   .   .   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:50:10 linked list.go:12:7
+.   .   .   NAME-main.newNode esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:50:10 linked list.go:13:2
+.   .   GOTO main..i0 tc(1) # linked list.go:50:10
+.   DCL # linked list.go:50:10 linked list.go:20:2
+.   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:50:10 linked list.go:20:2
+.   AS Def tc(1) # linked list.go:50:10 linked list.go:20:7
+.   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:50:10 linked list.go:20:2
+.   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:50:10 linked list.go:20:11
+.   .   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:50:10 linked list.go:12:7
+.   FOR tc(1) # linked list.go:50:10 linked list.go:21:2
+.   FOR-Cond
+.   .   NE bool tc(1) # linked list.go:50:10 linked list.go:21:16
+.   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:50:10 linked list.go:21:10
+.   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:50:10 linked list.go:20:2
+.   .   .   NIL PTR-*Node tc(1) # linked list.go:50:10 linked list.go:21:19
+.   FOR-Post
+.   .   BLOCK # linked list.go:50:10 linked list.go:22:8
+.   FOR-Body
+.   .   AS tc(1) # linked list.go:50:10 linked list.go:22:8
+.   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:50:10 linked list.go:20:2
+.   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:50:10 linked list.go:22:14
+.   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:50:10 linked list.go:20:2
+.   AS tc(1) # linked list.go:50:10 linked list.go:25:12
+.   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:50:10 linked list.go:25:6
+.   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:50:10 linked list.go:20:2
+.   .   NAME-main.newNode esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:50:10 linked list.go:13:2
+.   LABEL main..i0 # linked list.go:50:10
+.   DCL # linked list.go:51:10
+.   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:51:10 linked list.go:12:7
+.   DCL # linked list.go:51:10
+.   .   NAME-main.value esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used int tc(1) # linked list.go:51:10 linked list.go:12:20
+.   BLOCK # linked list.go:51:10
+.   BLOCK-List
+.   .   AS tc(1) # linked list.go:51:10
+.   .   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:51:10 linked list.go:12:7
+.   .   .   NAME-main.list esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*List tc(1) # linked list.go:49:2
+.   .   AS tc(1) # linked list.go:51:10
+.   .   .   NAME-main.value esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used int tc(1) # linked list.go:51:10 linked list.go:12:20
+.   .   .   LITERAL-2 int tc(1) # linked list.go:51:11
+.   INLMARK Index:1 # +linked list.go:51:10
+.   DCL # linked list.go:51:10 linked list.go:13:2
+.   .   NAME-main.newNode esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:51:10 linked list.go:13:2
+.   AS-init
+.   .   AS tc(1) # linked list.go:51:10 linked list.go:13:13
+.   .   .   NAME-main..autotmp_33 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used PTR-*Node tc(1) # linked list.go:51:10 linked list.go:13:13
+.   .   .   NEW esc(h) NonNil PTR-*Node tc(1) # linked list.go:51:10 linked list.go:13:13
+.   .   .   .   TYPE main.Node Class:PEXTERN Offset:0 type main.Node tc(1) # linked list.go:3:6
+.   .   AS tc(1) # linked list.go:51:10 linked list.go:13:13
+.   .   .   DEREF main.Node tc(1) # linked list.go:51:10 linked list.go:13:13
+.   .   .   .   NAME-main..autotmp_33 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used PTR-*Node tc(1) # linked list.go:51:10 linked list.go:13:13
+.   .   BLOCK tc(1) # linked list.go:51:10 linked list.go:13:19
+.   .   BLOCK-List
+.   .   .   AS tc(1) # linked list.go:51:10 linked list.go:13:19
+.   .   .   .   DOT main.data int tc(1) # linked list.go:51:10 linked list.go:13:19
+.   .   .   .   .   DEREF main.Node tc(1) # linked list.go:51:10 linked list.go:13:13
+.   .   .   .   .   .   NAME-main..autotmp_33 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used PTR-*Node tc(1) # linked list.go:51:10 linked list.go:13:13
+.   .   .   .   NAME-main.value esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used int tc(1) # linked list.go:51:10 linked list.go:12:20
+.   AS Def tc(1) # linked list.go:51:10 linked list.go:13:10
+.   .   NAME-main.newNode esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:51:10 linked list.go:13:2
+.   .   NAME-main..autotmp_33 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used PTR-*Node tc(1) # linked list.go:51:10 linked list.go:13:13
+.   IF tc(1) # linked list.go:51:10 linked list.go:15:2
+.   IF-Cond
+.   .   EQ bool tc(1) # linked list.go:51:10 linked list.go:15:12
+.   .   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:51:10 linked list.go:15:6
+.   .   .   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:51:10 linked list.go:12:7
+.   .   .   NIL PTR-*Node tc(1) # linked list.go:51:10 linked list.go:15:15
+.   IF-Body
+.   .   AS tc(1) # linked list.go:51:10 linked list.go:16:10
+.   .   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:51:10 linked list.go:16:4
+.   .   .   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:51:10 linked list.go:12:7
+.   .   .   NAME-main.newNode esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:51:10 linked list.go:13:2
+.   .   GOTO main..i1 tc(1) # linked list.go:51:10
+.   DCL # linked list.go:51:10 linked list.go:20:2
+.   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:51:10 linked list.go:20:2
+.   AS Def tc(1) # linked list.go:51:10 linked list.go:20:7
+.   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:51:10 linked list.go:20:2
+.   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:51:10 linked list.go:20:11
+.   .   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:51:10 linked list.go:12:7
+.   FOR tc(1) # linked list.go:51:10 linked list.go:21:2
+.   FOR-Cond
+.   .   NE bool tc(1) # linked list.go:51:10 linked list.go:21:16
+.   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:51:10 linked list.go:21:10
+.   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:51:10 linked list.go:20:2
+.   .   .   NIL PTR-*Node tc(1) # linked list.go:51:10 linked list.go:21:19
+.   FOR-Post
+.   .   BLOCK # linked list.go:51:10 linked list.go:22:8
+.   FOR-Body
+.   .   AS tc(1) # linked list.go:51:10 linked list.go:22:8
+.   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:51:10 linked list.go:20:2
+.   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:51:10 linked list.go:22:14
+.   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:51:10 linked list.go:20:2
+.   AS tc(1) # linked list.go:51:10 linked list.go:25:12
+.   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:51:10 linked list.go:25:6
+.   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:51:10 linked list.go:20:2
+.   .   NAME-main.newNode esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:51:10 linked list.go:13:2
+.   LABEL main..i1 # linked list.go:51:10
+.   DCL # linked list.go:52:10
+.   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:52:10 linked list.go:12:7
+.   DCL # linked list.go:52:10
+.   .   NAME-main.value esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used int tc(1) # linked list.go:52:10 linked list.go:12:20
+.   BLOCK # linked list.go:52:10
+.   BLOCK-List
+.   .   AS tc(1) # linked list.go:52:10
+.   .   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:52:10 linked list.go:12:7
+.   .   .   NAME-main.list esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*List tc(1) # linked list.go:49:2
+.   .   AS tc(1) # linked list.go:52:10
+.   .   .   NAME-main.value esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used int tc(1) # linked list.go:52:10 linked list.go:12:20
+.   .   .   LITERAL-3 int tc(1) # linked list.go:52:11
+.   INLMARK Index:2 # +linked list.go:52:10
+.   DCL # linked list.go:52:10 linked list.go:13:2
+.   .   NAME-main.newNode esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:52:10 linked list.go:13:2
+.   AS-init
+.   .   AS tc(1) # linked list.go:52:10 linked list.go:13:13
+.   .   .   NAME-main..autotmp_34 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used PTR-*Node tc(1) # linked list.go:52:10 linked list.go:13:13
+.   .   .   NEW esc(h) NonNil PTR-*Node tc(1) # linked list.go:52:10 linked list.go:13:13
+.   .   .   .   TYPE main.Node Class:PEXTERN Offset:0 type main.Node tc(1) # linked list.go:3:6
+.   .   AS tc(1) # linked list.go:52:10 linked list.go:13:13
+.   .   .   DEREF main.Node tc(1) # linked list.go:52:10 linked list.go:13:13
+.   .   .   .   NAME-main..autotmp_34 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used PTR-*Node tc(1) # linked list.go:52:10 linked list.go:13:13
+.   .   BLOCK tc(1) # linked list.go:52:10 linked list.go:13:19
+.   .   BLOCK-List
+.   .   .   AS tc(1) # linked list.go:52:10 linked list.go:13:19
+.   .   .   .   DOT main.data int tc(1) # linked list.go:52:10 linked list.go:13:19
+.   .   .   .   .   DEREF main.Node tc(1) # linked list.go:52:10 linked list.go:13:13
+.   .   .   .   .   .   NAME-main..autotmp_34 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used PTR-*Node tc(1) # linked list.go:52:10 linked list.go:13:13
+.   .   .   .   NAME-main.value esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used int tc(1) # linked list.go:52:10 linked list.go:12:20
+.   AS Def tc(1) # linked list.go:52:10 linked list.go:13:10
+.   .   NAME-main.newNode esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:52:10 linked list.go:13:2
+.   .   NAME-main..autotmp_34 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used PTR-*Node tc(1) # linked list.go:52:10 linked list.go:13:13
+.   IF tc(1) # linked list.go:52:10 linked list.go:15:2
+.   IF-Cond
+.   .   EQ bool tc(1) # linked list.go:52:10 linked list.go:15:12
+.   .   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:52:10 linked list.go:15:6
+.   .   .   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:52:10 linked list.go:12:7
+.   .   .   NIL PTR-*Node tc(1) # linked list.go:52:10 linked list.go:15:15
+.   IF-Body
+.   .   AS tc(1) # linked list.go:52:10 linked list.go:16:10
+.   .   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:52:10 linked list.go:16:4
+.   .   .   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:52:10 linked list.go:12:7
+.   .   .   NAME-main.newNode esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:52:10 linked list.go:13:2
+.   .   GOTO main..i2 tc(1) # linked list.go:52:10
+.   DCL # linked list.go:52:10 linked list.go:20:2
+.   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:52:10 linked list.go:20:2
+.   AS Def tc(1) # linked list.go:52:10 linked list.go:20:7
+.   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:52:10 linked list.go:20:2
+.   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:52:10 linked list.go:20:11
+.   .   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:52:10 linked list.go:12:7
+.   FOR tc(1) # linked list.go:52:10 linked list.go:21:2
+.   FOR-Cond
+.   .   NE bool tc(1) # linked list.go:52:10 linked list.go:21:16
+.   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:52:10 linked list.go:21:10
+.   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:52:10 linked list.go:20:2
+.   .   .   NIL PTR-*Node tc(1) # linked list.go:52:10 linked list.go:21:19
+.   FOR-Post
+.   .   BLOCK # linked list.go:52:10 linked list.go:22:8
+.   FOR-Body
+.   .   AS tc(1) # linked list.go:52:10 linked list.go:22:8
+.   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:52:10 linked list.go:20:2
+.   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:52:10 linked list.go:22:14
+.   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:52:10 linked list.go:20:2
+.   AS tc(1) # linked list.go:52:10 linked list.go:25:12
+.   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:52:10 linked list.go:25:6
+.   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:52:10 linked list.go:20:2
+.   .   NAME-main.newNode esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:52:10 linked list.go:13:2
+.   LABEL main..i2 # linked list.go:52:10
+.   DCL # linked list.go:53:10
+.   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:53:10 linked list.go:12:7
+.   DCL # linked list.go:53:10
+.   .   NAME-main.value esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used int tc(1) # linked list.go:53:10 linked list.go:12:20
+.   BLOCK # linked list.go:53:10
+.   BLOCK-List
+.   .   AS tc(1) # linked list.go:53:10
+.   .   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:53:10 linked list.go:12:7
+.   .   .   NAME-main.list esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*List tc(1) # linked list.go:49:2
+.   .   AS tc(1) # linked list.go:53:10
+.   .   .   NAME-main.value esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used int tc(1) # linked list.go:53:10 linked list.go:12:20
+.   .   .   LITERAL-4 int tc(1) # linked list.go:53:11
+.   INLMARK Index:3 # +linked list.go:53:10
+.   DCL # linked list.go:53:10 linked list.go:13:2
+.   .   NAME-main.newNode esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:53:10 linked list.go:13:2
+.   AS-init
+.   .   AS tc(1) # linked list.go:53:10 linked list.go:13:13
+.   .   .   NAME-main..autotmp_35 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used PTR-*Node tc(1) # linked list.go:53:10 linked list.go:13:13
+.   .   .   NEW esc(h) NonNil PTR-*Node tc(1) # linked list.go:53:10 linked list.go:13:13
+.   .   .   .   TYPE main.Node Class:PEXTERN Offset:0 type main.Node tc(1) # linked list.go:3:6
+.   .   AS tc(1) # linked list.go:53:10 linked list.go:13:13
+.   .   .   DEREF main.Node tc(1) # linked list.go:53:10 linked list.go:13:13
+.   .   .   .   NAME-main..autotmp_35 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used PTR-*Node tc(1) # linked list.go:53:10 linked list.go:13:13
+.   .   BLOCK tc(1) # linked list.go:53:10 linked list.go:13:19
+.   .   BLOCK-List
+.   .   .   AS tc(1) # linked list.go:53:10 linked list.go:13:19
+.   .   .   .   DOT main.data int tc(1) # linked list.go:53:10 linked list.go:13:19
+.   .   .   .   .   DEREF main.Node tc(1) # linked list.go:53:10 linked list.go:13:13
+.   .   .   .   .   .   NAME-main..autotmp_35 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used PTR-*Node tc(1) # linked list.go:53:10 linked list.go:13:13
+.   .   .   .   NAME-main.value esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used int tc(1) # linked list.go:53:10 linked list.go:12:20
+.   AS Def tc(1) # linked list.go:53:10 linked list.go:13:10
+.   .   NAME-main.newNode esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:53:10 linked list.go:13:2
+.   .   NAME-main..autotmp_35 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used PTR-*Node tc(1) # linked list.go:53:10 linked list.go:13:13
+.   IF tc(1) # linked list.go:53:10 linked list.go:15:2
+.   IF-Cond
+.   .   EQ bool tc(1) # linked list.go:53:10 linked list.go:15:12
+.   .   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:53:10 linked list.go:15:6
+.   .   .   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:53:10 linked list.go:12:7
+.   .   .   NIL PTR-*Node tc(1) # linked list.go:53:10 linked list.go:15:15
+.   IF-Body
+.   .   AS tc(1) # linked list.go:53:10 linked list.go:16:10
+.   .   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:53:10 linked list.go:16:4
+.   .   .   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:53:10 linked list.go:12:7
+.   .   .   NAME-main.newNode esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:53:10 linked list.go:13:2
+.   .   GOTO main..i3 tc(1) # linked list.go:53:10
+.   DCL # linked list.go:53:10 linked list.go:20:2
+.   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:53:10 linked list.go:20:2
+.   AS Def tc(1) # linked list.go:53:10 linked list.go:20:7
+.   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:53:10 linked list.go:20:2
+.   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:53:10 linked list.go:20:11
+.   .   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:53:10 linked list.go:12:7
+.   FOR tc(1) # linked list.go:53:10 linked list.go:21:2
+.   FOR-Cond
+.   .   NE bool tc(1) # linked list.go:53:10 linked list.go:21:16
+.   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:53:10 linked list.go:21:10
+.   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:53:10 linked list.go:20:2
+.   .   .   NIL PTR-*Node tc(1) # linked list.go:53:10 linked list.go:21:19
+.   FOR-Post
+.   .   BLOCK # linked list.go:53:10 linked list.go:22:8
+.   FOR-Body
+.   .   AS tc(1) # linked list.go:53:10 linked list.go:22:8
+.   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:53:10 linked list.go:20:2
+.   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:53:10 linked list.go:22:14
+.   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:53:10 linked list.go:20:2
+.   AS tc(1) # linked list.go:53:10 linked list.go:25:12
+.   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:53:10 linked list.go:25:6
+.   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:53:10 linked list.go:20:2
+.   .   NAME-main.newNode esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:53:10 linked list.go:13:2
+.   LABEL main..i3 # linked list.go:53:10
+.   BLOCK tc(1) # linked list.go:55:9
+.   BLOCK-List
+.   .   CALLFUNC Walked tc(1) # linked list.go:55:9
+.   .   .   NAME-runtime.printlock Class:PFUNC Offset:0 Used FUNC-func() tc(1)
+.   .   CALLFUNC Walked tc(1) # linked list.go:55:9
+.   .   .   NAME-runtime.printstring Class:PFUNC Offset:0 Used FUNC-func(string) tc(1)
+.   .   CALLFUNC-Args
+.   .   .   LITERAL-"Initial List: \n" string tc(1) # linked list.go:55:9
+.   .   CALLFUNC Walked tc(1) # linked list.go:55:9
+.   .   .   NAME-runtime.printunlock Class:PFUNC Offset:0 Used FUNC-func() tc(1)
+.   DCL # linked list.go:56:11
+.   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:56:11 linked list.go:67:16
+.   BLOCK # linked list.go:56:11
+.   BLOCK-List
+.   .   AS tc(1) # linked list.go:56:11
+.   .   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:56:11 linked list.go:67:16
+.   .   .   NAME-main.list esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*List tc(1) # linked list.go:49:2
+.   INLMARK Index:4 # +linked list.go:56:11
+.   DCL # linked list.go:56:11 linked list.go:68:2
+.   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:56:11 linked list.go:68:2
+.   AS Def tc(1) # linked list.go:56:11 linked list.go:68:7
+.   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:56:11 linked list.go:68:2
+.   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:56:11 linked list.go:68:11
+.   .   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:56:11 linked list.go:67:16
+.   FOR tc(1) # linked list.go:56:11 linked list.go:69:2
+.   FOR-Cond
+.   .   NE bool tc(1) # linked list.go:56:11 linked list.go:69:11
+.   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:56:11 linked list.go:68:2
+.   .   .   NIL PTR-*Node tc(1) # linked list.go:56:11 linked list.go:69:14
+.   FOR-Post
+.   .   BLOCK # linked list.go:56:11 linked list.go:70:8
+.   FOR-Body
+.   .   BLOCK-init
+.   .   .   AS tc(1) # linked list.go:56:11 linked list.go:70:8
+.   .   .   .   NAME-main..autotmp_36 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # linked list.go:56:11 linked list.go:70:8
+.   .   .   .   DOTPTR main.data int tc(1) # linked list.go:56:11 linked list.go:70:13
+.   .   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:56:11 linked list.go:68:2
+.   .   BLOCK tc(1) # linked list.go:56:11 linked list.go:70:8
+.   .   BLOCK-List
+.   .   .   CALLFUNC Walked tc(1) # linked list.go:56:11 linked list.go:70:8
+.   .   .   .   NAME-runtime.printlock Class:PFUNC Offset:0 Used FUNC-func() tc(1)
+.   .   .   CALLFUNC Walked tc(1) # linked list.go:56:11 linked list.go:70:8
+.   .   .   .   NAME-runtime.printint Class:PFUNC Offset:0 Used FUNC-func(int64) tc(1)
+.   .   .   CALLFUNC-Args
+.   .   .   .   CONVNOP int64 tc(1) # linked list.go:56:11 linked list.go:70:8
+.   .   .   .   .   NAME-main..autotmp_36 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # linked list.go:56:11 linked list.go:70:8
+.   .   .   CALLFUNC Walked tc(1) # linked list.go:56:11 linked list.go:70:8
+.   .   .   .   NAME-runtime.printstring Class:PFUNC Offset:0 Used FUNC-func(string) tc(1)
+.   .   .   CALLFUNC-Args
+.   .   .   .   LITERAL-", " string tc(1) # linked list.go:56:11 linked list.go:70:8
+.   .   .   CALLFUNC Walked tc(1) # linked list.go:56:11 linked list.go:70:8
+.   .   .   .   NAME-runtime.printunlock Class:PFUNC Offset:0 Used FUNC-func() tc(1)
+.   .   AS tc(1) # linked list.go:56:11 linked list.go:71:8
+.   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:56:11 linked list.go:68:2
+.   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:56:11 linked list.go:71:14
+.   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:56:11 linked list.go:68:2
+.   BLOCK tc(1) # linked list.go:56:11 linked list.go:73:9
+.   BLOCK-List
+.   .   CALLFUNC Walked tc(1) # linked list.go:56:11 linked list.go:73:9
+.   .   .   NAME-runtime.printlock Class:PFUNC Offset:0 Used FUNC-func() tc(1)
+.   .   CALLFUNC Walked tc(1) # linked list.go:56:11 linked list.go:73:9
+.   .   .   NAME-runtime.printnl Class:PFUNC Offset:0 Used FUNC-func() tc(1)
+.   .   CALLFUNC Walked tc(1) # linked list.go:56:11 linked list.go:73:9
+.   .   .   NAME-runtime.printunlock Class:PFUNC Offset:0 Used FUNC-func() tc(1)
+.   LABEL main..i4 # linked list.go:56:11
+.   DCL # linked list.go:58:13
+.   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:58:13 linked list.go:28:7
+.   DCL # linked list.go:58:13
+.   .   NAME-main.value esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used int tc(1) # linked list.go:58:13 linked list.go:28:23
+.   BLOCK # linked list.go:58:13
+.   BLOCK-List
+.   .   AS tc(1) # linked list.go:58:13
+.   .   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:58:13 linked list.go:28:7
+.   .   .   NAME-main.list esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*List tc(1) # linked list.go:49:2
+.   .   AS tc(1) # linked list.go:58:13
+.   .   .   NAME-main.value esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used int tc(1) # linked list.go:58:13 linked list.go:28:23
+.   .   .   LITERAL-2 int tc(1) # linked list.go:58:14
+.   INLMARK Index:5 # +linked list.go:58:13
+.   IF tc(1) # linked list.go:58:13 linked list.go:29:2
+.   IF-Cond
+.   .   EQ bool tc(1) # linked list.go:58:13 linked list.go:29:12
+.   .   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:58:13 linked list.go:29:6
+.   .   .   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:58:13 linked list.go:28:7
+.   .   .   NIL PTR-*Node tc(1) # linked list.go:58:13 linked list.go:29:15
+.   IF-Body
+.   .   GOTO main..i5 tc(1) # linked list.go:58:13
+.   IF tc(1) # linked list.go:58:13 linked list.go:33:2
+.   IF-Cond
+.   .   EQ bool tc(1) # linked list.go:58:13 linked list.go:33:17
+.   .   .   DOTPTR main.data int tc(1) # linked list.go:58:13 linked list.go:33:11
+.   .   .   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:58:13 linked list.go:33:6
+.   .   .   .   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:58:13 linked list.go:28:7
+.   .   .   NAME-main.value esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used int tc(1) # linked list.go:58:13 linked list.go:28:23
+.   IF-Body
+.   .   AS tc(1) # linked list.go:58:13 linked list.go:34:10
+.   .   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:58:13 linked list.go:34:4
+.   .   .   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:58:13 linked list.go:28:7
+.   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:58:13 linked list.go:34:18
+.   .   .   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:58:13 linked list.go:34:13
+.   .   .   .   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:58:13 linked list.go:28:7
+.   .   GOTO main..i5 tc(1) # linked list.go:58:13
+.   DCL # linked list.go:58:13 linked list.go:38:2
+.   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:58:13 linked list.go:38:2
+.   AS Def tc(1) # linked list.go:58:13 linked list.go:38:7
+.   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:58:13 linked list.go:38:2
+.   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:58:13 linked list.go:38:11
+.   .   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:58:13 linked list.go:28:7
+.   FOR tc(1) # linked list.go:58:13 linked list.go:39:2
+.   FOR-Cond
+.   .   CONVNOP-init
+.   .   .   AS tc(1) # linked list.go:58:13 linked list.go:39:23
+.   .   .   .   NAME-main..autotmp_29 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used bool tc(1) # linked list.go:58:13 linked list.go:39:23
+.   .   .   .   NE bool tc(1) # linked list.go:58:13 linked list.go:39:16
+.   .   .   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:58:13 linked list.go:39:10
+.   .   .   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:58:13 linked list.go:38:2
+.   .   .   .   .   NIL PTR-*Node tc(1) # linked list.go:58:13 linked list.go:39:19
+.   .   .   IF # linked list.go:58:13 linked list.go:39:23
+.   .   .   IF-Cond
+.   .   .   .   NAME-main..autotmp_29 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used bool tc(1) # linked list.go:58:13 linked list.go:39:23
+.   .   .   IF-Body
+.   .   .   .   AS tc(1) # linked list.go:58:13 linked list.go:39:23
+.   .   .   .   .   NAME-main..autotmp_29 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used bool tc(1) # linked list.go:58:13 linked list.go:39:23
+.   .   .   .   .   NE bool tc(1) # linked list.go:58:13 linked list.go:39:41
+.   .   .   .   .   .   DOTPTR main.data int tc(1) # linked list.go:58:13 linked list.go:39:35
+.   .   .   .   .   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:58:13 linked list.go:39:30
+.   .   .   .   .   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:58:13 linked list.go:38:2
+.   .   .   .   .   .   NAME-main.value esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used int tc(1) # linked list.go:58:13 linked list.go:28:23
+.   .   CONVNOP bool tc(1) # linked list.go:58:13 linked list.go:39:23
+.   .   .   NAME-main..autotmp_29 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used bool tc(1) # linked list.go:58:13 linked list.go:39:23
+.   FOR-Post
+.   .   BLOCK # linked list.go:58:13 linked list.go:40:8
+.   FOR-Body
+.   .   AS tc(1) # linked list.go:58:13 linked list.go:40:8
+.   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:58:13 linked list.go:38:2
+.   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:58:13 linked list.go:40:14
+.   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:58:13 linked list.go:38:2
+.   IF tc(1) # linked list.go:58:13 linked list.go:43:2
+.   IF-Cond
+.   .   NE bool tc(1) # linked list.go:58:13 linked list.go:43:15
+.   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:58:13 linked list.go:43:9
+.   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:58:13 linked list.go:38:2
+.   .   .   NIL PTR-*Node tc(1) # linked list.go:58:13 linked list.go:43:18
+.   IF-Body
+.   .   AS tc(1) # linked list.go:58:13 linked list.go:44:13
+.   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:58:13 linked list.go:44:7
+.   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:58:13 linked list.go:38:2
+.   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:58:13 linked list.go:44:24
+.   .   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:58:13 linked list.go:44:19
+.   .   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:58:13 linked list.go:38:2
+.   LABEL main..i5 # linked list.go:58:13
+.   BLOCK tc(1) # linked list.go:59:9
+.   BLOCK-List
+.   .   CALLFUNC Walked tc(1) # linked list.go:59:9
+.   .   .   NAME-runtime.printlock Class:PFUNC Offset:0 Used FUNC-func() tc(1)
+.   .   CALLFUNC Walked tc(1) # linked list.go:59:9
+.   .   .   NAME-runtime.printstring Class:PFUNC Offset:0 Used FUNC-func(string) tc(1)
+.   .   CALLFUNC-Args
+.   .   .   LITERAL-"List after removing 2: \n" string tc(1) # linked list.go:59:9
+.   .   CALLFUNC Walked tc(1) # linked list.go:59:9
+.   .   .   NAME-runtime.printunlock Class:PFUNC Offset:0 Used FUNC-func() tc(1)
+.   DCL # linked list.go:60:11
+.   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:60:11 linked list.go:67:16
+.   BLOCK # linked list.go:60:11
+.   BLOCK-List
+.   .   AS tc(1) # linked list.go:60:11
+.   .   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:60:11 linked list.go:67:16
+.   .   .   NAME-main.list esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*List tc(1) # linked list.go:49:2
+.   INLMARK Index:6 # +linked list.go:60:11
+.   DCL # linked list.go:60:11 linked list.go:68:2
+.   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:60:11 linked list.go:68:2
+.   AS Def tc(1) # linked list.go:60:11 linked list.go:68:7
+.   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:60:11 linked list.go:68:2
+.   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:60:11 linked list.go:68:11
+.   .   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:60:11 linked list.go:67:16
+.   FOR tc(1) # linked list.go:60:11 linked list.go:69:2
+.   FOR-Cond
+.   .   NE bool tc(1) # linked list.go:60:11 linked list.go:69:11
+.   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:60:11 linked list.go:68:2
+.   .   .   NIL PTR-*Node tc(1) # linked list.go:60:11 linked list.go:69:14
+.   FOR-Post
+.   .   BLOCK # linked list.go:60:11 linked list.go:70:8
+.   FOR-Body
+.   .   BLOCK-init
+.   .   .   AS tc(1) # linked list.go:60:11 linked list.go:70:8
+.   .   .   .   NAME-main..autotmp_37 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # linked list.go:60:11 linked list.go:70:8
+.   .   .   .   DOTPTR main.data int tc(1) # linked list.go:60:11 linked list.go:70:13
+.   .   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:60:11 linked list.go:68:2
+.   .   BLOCK tc(1) # linked list.go:60:11 linked list.go:70:8
+.   .   BLOCK-List
+.   .   .   CALLFUNC Walked tc(1) # linked list.go:60:11 linked list.go:70:8
+.   .   .   .   NAME-runtime.printlock Class:PFUNC Offset:0 Used FUNC-func() tc(1)
+.   .   .   CALLFUNC Walked tc(1) # linked list.go:60:11 linked list.go:70:8
+.   .   .   .   NAME-runtime.printint Class:PFUNC Offset:0 Used FUNC-func(int64) tc(1)
+.   .   .   CALLFUNC-Args
+.   .   .   .   CONVNOP int64 tc(1) # linked list.go:60:11 linked list.go:70:8
+.   .   .   .   .   NAME-main..autotmp_37 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # linked list.go:60:11 linked list.go:70:8
+.   .   .   CALLFUNC Walked tc(1) # linked list.go:60:11 linked list.go:70:8
+.   .   .   .   NAME-runtime.printstring Class:PFUNC Offset:0 Used FUNC-func(string) tc(1)
+.   .   .   CALLFUNC-Args
+.   .   .   .   LITERAL-", " string tc(1) # linked list.go:60:11 linked list.go:70:8
+.   .   .   CALLFUNC Walked tc(1) # linked list.go:60:11 linked list.go:70:8
+.   .   .   .   NAME-runtime.printunlock Class:PFUNC Offset:0 Used FUNC-func() tc(1)
+.   .   AS tc(1) # linked list.go:60:11 linked list.go:71:8
+.   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:60:11 linked list.go:68:2
+.   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:60:11 linked list.go:71:14
+.   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:60:11 linked list.go:68:2
+.   BLOCK tc(1) # linked list.go:60:11 linked list.go:73:9
+.   BLOCK-List
+.   .   CALLFUNC Walked tc(1) # linked list.go:60:11 linked list.go:73:9
+.   .   .   NAME-runtime.printlock Class:PFUNC Offset:0 Used FUNC-func() tc(1)
+.   .   CALLFUNC Walked tc(1) # linked list.go:60:11 linked list.go:73:9
+.   .   .   NAME-runtime.printnl Class:PFUNC Offset:0 Used FUNC-func() tc(1)
+.   .   CALLFUNC Walked tc(1) # linked list.go:60:11 linked list.go:73:9
+.   .   .   NAME-runtime.printunlock Class:PFUNC Offset:0 Used FUNC-func() tc(1)
+.   LABEL main..i6 # linked list.go:60:11
+.   DCL # linked list.go:62:13
+.   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:62:13 linked list.go:28:7
+.   DCL # linked list.go:62:13
+.   .   NAME-main.value esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used int tc(1) # linked list.go:62:13 linked list.go:28:23
+.   BLOCK # linked list.go:62:13
+.   BLOCK-List
+.   .   AS tc(1) # linked list.go:62:13
+.   .   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:62:13 linked list.go:28:7
+.   .   .   NAME-main.list esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*List tc(1) # linked list.go:49:2
+.   .   AS tc(1) # linked list.go:62:13
+.   .   .   NAME-main.value esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used int tc(1) # linked list.go:62:13 linked list.go:28:23
+.   .   .   LITERAL-4 int tc(1) # linked list.go:62:14
+.   INLMARK Index:7 # +linked list.go:62:13
+.   IF tc(1) # linked list.go:62:13 linked list.go:29:2
+.   IF-Cond
+.   .   EQ bool tc(1) # linked list.go:62:13 linked list.go:29:12
+.   .   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:62:13 linked list.go:29:6
+.   .   .   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:62:13 linked list.go:28:7
+.   .   .   NIL PTR-*Node tc(1) # linked list.go:62:13 linked list.go:29:15
+.   IF-Body
+.   .   GOTO main..i7 tc(1) # linked list.go:62:13
+.   IF tc(1) # linked list.go:62:13 linked list.go:33:2
+.   IF-Cond
+.   .   EQ bool tc(1) # linked list.go:62:13 linked list.go:33:17
+.   .   .   DOTPTR main.data int tc(1) # linked list.go:62:13 linked list.go:33:11
+.   .   .   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:62:13 linked list.go:33:6
+.   .   .   .   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:62:13 linked list.go:28:7
+.   .   .   NAME-main.value esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used int tc(1) # linked list.go:62:13 linked list.go:28:23
+.   IF-Body
+.   .   AS tc(1) # linked list.go:62:13 linked list.go:34:10
+.   .   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:62:13 linked list.go:34:4
+.   .   .   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:62:13 linked list.go:28:7
+.   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:62:13 linked list.go:34:18
+.   .   .   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:62:13 linked list.go:34:13
+.   .   .   .   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:62:13 linked list.go:28:7
+.   .   GOTO main..i7 tc(1) # linked list.go:62:13
+.   DCL # linked list.go:62:13 linked list.go:38:2
+.   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:62:13 linked list.go:38:2
+.   AS Def tc(1) # linked list.go:62:13 linked list.go:38:7
+.   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:62:13 linked list.go:38:2
+.   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:62:13 linked list.go:38:11
+.   .   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:62:13 linked list.go:28:7
+.   FOR tc(1) # linked list.go:62:13 linked list.go:39:2
+.   FOR-Cond
+.   .   CONVNOP-init
+.   .   .   AS tc(1) # linked list.go:62:13 linked list.go:39:23
+.   .   .   .   NAME-main..autotmp_29 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used bool tc(1) # linked list.go:58:13 linked list.go:39:23
+.   .   .   .   NE bool tc(1) # linked list.go:62:13 linked list.go:39:16
+.   .   .   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:62:13 linked list.go:39:10
+.   .   .   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:62:13 linked list.go:38:2
+.   .   .   .   .   NIL PTR-*Node tc(1) # linked list.go:62:13 linked list.go:39:19
+.   .   .   IF # linked list.go:62:13 linked list.go:39:23
+.   .   .   IF-Cond
+.   .   .   .   NAME-main..autotmp_29 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used bool tc(1) # linked list.go:58:13 linked list.go:39:23
+.   .   .   IF-Body
+.   .   .   .   AS tc(1) # linked list.go:62:13 linked list.go:39:23
+.   .   .   .   .   NAME-main..autotmp_29 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used bool tc(1) # linked list.go:58:13 linked list.go:39:23
+.   .   .   .   .   NE bool tc(1) # linked list.go:62:13 linked list.go:39:41
+.   .   .   .   .   .   DOTPTR main.data int tc(1) # linked list.go:62:13 linked list.go:39:35
+.   .   .   .   .   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:62:13 linked list.go:39:30
+.   .   .   .   .   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:62:13 linked list.go:38:2
+.   .   .   .   .   .   NAME-main.value esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used int tc(1) # linked list.go:62:13 linked list.go:28:23
+.   .   CONVNOP bool tc(1) # linked list.go:62:13 linked list.go:39:23
+.   .   .   NAME-main..autotmp_29 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used bool tc(1) # linked list.go:58:13 linked list.go:39:23
+.   FOR-Post
+.   .   BLOCK # linked list.go:62:13 linked list.go:40:8
+.   FOR-Body
+.   .   AS tc(1) # linked list.go:62:13 linked list.go:40:8
+.   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:62:13 linked list.go:38:2
+.   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:62:13 linked list.go:40:14
+.   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:62:13 linked list.go:38:2
+.   IF tc(1) # linked list.go:62:13 linked list.go:43:2
+.   IF-Cond
+.   .   NE bool tc(1) # linked list.go:62:13 linked list.go:43:15
+.   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:62:13 linked list.go:43:9
+.   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:62:13 linked list.go:38:2
+.   .   .   NIL PTR-*Node tc(1) # linked list.go:62:13 linked list.go:43:18
+.   IF-Body
+.   .   AS tc(1) # linked list.go:62:13 linked list.go:44:13
+.   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:62:13 linked list.go:44:7
+.   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:62:13 linked list.go:38:2
+.   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:62:13 linked list.go:44:24
+.   .   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:62:13 linked list.go:44:19
+.   .   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:62:13 linked list.go:38:2
+.   LABEL main..i7 # linked list.go:62:13
+.   BLOCK tc(1) # linked list.go:63:9
+.   BLOCK-List
+.   .   CALLFUNC Walked tc(1) # linked list.go:63:9
+.   .   .   NAME-runtime.printlock Class:PFUNC Offset:0 Used FUNC-func() tc(1)
+.   .   CALLFUNC Walked tc(1) # linked list.go:63:9
+.   .   .   NAME-runtime.printstring Class:PFUNC Offset:0 Used FUNC-func(string) tc(1)
+.   .   CALLFUNC-Args
+.   .   .   LITERAL-"List after removing 4: \n" string tc(1) # linked list.go:63:9
+.   .   CALLFUNC Walked tc(1) # linked list.go:63:9
+.   .   .   NAME-runtime.printunlock Class:PFUNC Offset:0 Used FUNC-func() tc(1)
+.   DCL # linked list.go:64:11
+.   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:64:11 linked list.go:67:16
+.   BLOCK # linked list.go:64:11
+.   BLOCK-List
+.   .   AS tc(1) # linked list.go:64:11
+.   .   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:64:11 linked list.go:67:16
+.   .   .   NAME-main.list esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*List tc(1) # linked list.go:49:2
+.   INLMARK Index:8 # +linked list.go:64:11
+.   DCL # linked list.go:64:11 linked list.go:68:2
+.   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:64:11 linked list.go:68:2
+.   AS Def tc(1) # linked list.go:64:11 linked list.go:68:7
+.   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:64:11 linked list.go:68:2
+.   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:64:11 linked list.go:68:11
+.   .   .   NAME-main.l esc(no) Class:PAUTO Offset:0 InlFormal OnStack Used PTR-*List tc(1) # linked list.go:64:11 linked list.go:67:16
+.   FOR tc(1) # linked list.go:64:11 linked list.go:69:2
+.   FOR-Cond
+.   .   NE bool tc(1) # linked list.go:64:11 linked list.go:69:11
+.   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:64:11 linked list.go:68:2
+.   .   .   NIL PTR-*Node tc(1) # linked list.go:64:11 linked list.go:69:14
+.   FOR-Post
+.   .   BLOCK # linked list.go:64:11 linked list.go:70:8
+.   FOR-Body
+.   .   BLOCK-init
+.   .   .   AS tc(1) # linked list.go:64:11 linked list.go:70:8
+.   .   .   .   NAME-main..autotmp_38 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # linked list.go:64:11 linked list.go:70:8
+.   .   .   .   DOTPTR main.data int tc(1) # linked list.go:64:11 linked list.go:70:13
+.   .   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:64:11 linked list.go:68:2
+.   .   BLOCK tc(1) # linked list.go:64:11 linked list.go:70:8
+.   .   BLOCK-List
+.   .   .   CALLFUNC Walked tc(1) # linked list.go:64:11 linked list.go:70:8
+.   .   .   .   NAME-runtime.printlock Class:PFUNC Offset:0 Used FUNC-func() tc(1)
+.   .   .   CALLFUNC Walked tc(1) # linked list.go:64:11 linked list.go:70:8
+.   .   .   .   NAME-runtime.printint Class:PFUNC Offset:0 Used FUNC-func(int64) tc(1)
+.   .   .   CALLFUNC-Args
+.   .   .   .   CONVNOP int64 tc(1) # linked list.go:64:11 linked list.go:70:8
+.   .   .   .   .   NAME-main..autotmp_38 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # linked list.go:64:11 linked list.go:70:8
+.   .   .   CALLFUNC Walked tc(1) # linked list.go:64:11 linked list.go:70:8
+.   .   .   .   NAME-runtime.printstring Class:PFUNC Offset:0 Used FUNC-func(string) tc(1)
+.   .   .   CALLFUNC-Args
+.   .   .   .   LITERAL-", " string tc(1) # linked list.go:64:11 linked list.go:70:8
+.   .   .   CALLFUNC Walked tc(1) # linked list.go:64:11 linked list.go:70:8
+.   .   .   .   NAME-runtime.printunlock Class:PFUNC Offset:0 Used FUNC-func() tc(1)
+.   .   AS tc(1) # linked list.go:64:11 linked list.go:71:8
+.   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:64:11 linked list.go:68:2
+.   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:64:11 linked list.go:71:14
+.   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 InlLocal OnStack Used PTR-*Node tc(1) # linked list.go:64:11 linked list.go:68:2
+.   BLOCK tc(1) # linked list.go:64:11 linked list.go:73:9
+.   BLOCK-List
+.   .   CALLFUNC Walked tc(1) # linked list.go:64:11 linked list.go:73:9
+.   .   .   NAME-runtime.printlock Class:PFUNC Offset:0 Used FUNC-func() tc(1)
+.   .   CALLFUNC Walked tc(1) # linked list.go:64:11 linked list.go:73:9
+.   .   .   NAME-runtime.printnl Class:PFUNC Offset:0 Used FUNC-func() tc(1)
+.   .   CALLFUNC Walked tc(1) # linked list.go:64:11 linked list.go:73:9
+.   .   .   NAME-runtime.printunlock Class:PFUNC Offset:0 Used FUNC-func() tc(1)
+.   LABEL main..i8 # linked list.go:64:11
+
+before walk printList
+.   DCL # linked list.go:68:2
+.   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*Node tc(1) # linked list.go:68:2
+.   AS Def tc(1) # linked list.go:68:7
+.   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*Node tc(1) # linked list.go:68:2
+.   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:68:11
+.   .   .   NAME-main.l esc(no) Class:PPARAM Offset:0 OnStack Used PTR-*List tc(1) # linked list.go:67:16
+.   FOR tc(1) # linked list.go:69:2
+.   FOR-Cond
+.   .   NE bool tc(1) # linked list.go:69:11
+.   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*Node tc(1) # linked list.go:68:2
+.   .   .   NIL PTR-*Node tc(1) # linked list.go:69:14
+.   FOR-Post
+.   .   BLOCK # linked list.go:70:8
+.   FOR-Body
+.   .   PRINT tc(1) # linked list.go:70:8
+.   .   PRINT-Args
+.   .   .   DOTPTR main.data int tc(1) # linked list.go:70:13
+.   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*Node tc(1) # linked list.go:68:2
+.   .   .   LITERAL-", " string tc(1) # linked list.go:70:20
+.   .   AS tc(1) # linked list.go:71:8
+.   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*Node tc(1) # linked list.go:68:2
+.   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:71:14
+.   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*Node tc(1) # linked list.go:68:2
+.   PRINTN tc(1) # linked list.go:73:9
+after walk printList
+.   DCL # linked list.go:68:2
+.   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*Node tc(1) # linked list.go:68:2
+.   AS Def tc(1) # linked list.go:68:7
+.   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*Node tc(1) # linked list.go:68:2
+.   .   DOTPTR main.head PTR-*Node tc(1) # linked list.go:68:11
+.   .   .   NAME-main.l esc(no) Class:PPARAM Offset:0 OnStack Used PTR-*List tc(1) # linked list.go:67:16
+.   FOR tc(1) # linked list.go:69:2
+.   FOR-Cond
+.   .   NE bool tc(1) # linked list.go:69:11
+.   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*Node tc(1) # linked list.go:68:2
+.   .   .   NIL PTR-*Node tc(1) # linked list.go:69:14
+.   FOR-Post
+.   .   BLOCK # linked list.go:70:8
+.   FOR-Body
+.   .   BLOCK-init
+.   .   .   AS tc(1) # linked list.go:70:8
+.   .   .   .   NAME-main..autotmp_2 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # linked list.go:70:8
+.   .   .   .   DOTPTR main.data int tc(1) # linked list.go:70:13
+.   .   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*Node tc(1) # linked list.go:68:2
+.   .   BLOCK tc(1) # linked list.go:70:8
+.   .   BLOCK-List
+.   .   .   CALLFUNC Walked tc(1) # linked list.go:70:8
+.   .   .   .   NAME-runtime.printlock Class:PFUNC Offset:0 Used FUNC-func() tc(1)
+.   .   .   CALLFUNC Walked tc(1) # linked list.go:70:8
+.   .   .   .   NAME-runtime.printint Class:PFUNC Offset:0 Used FUNC-func(int64) tc(1)
+.   .   .   CALLFUNC-Args
+.   .   .   .   CONVNOP int64 tc(1) # linked list.go:70:8
+.   .   .   .   .   NAME-main..autotmp_2 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # linked list.go:70:8
+.   .   .   CALLFUNC Walked tc(1) # linked list.go:70:8
+.   .   .   .   NAME-runtime.printstring Class:PFUNC Offset:0 Used FUNC-func(string) tc(1)
+.   .   .   CALLFUNC-Args
+.   .   .   .   LITERAL-", " string tc(1) # linked list.go:70:8
+.   .   .   CALLFUNC Walked tc(1) # linked list.go:70:8
+.   .   .   .   NAME-runtime.printunlock Class:PFUNC Offset:0 Used FUNC-func() tc(1)
+.   .   AS tc(1) # linked list.go:71:8
+.   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*Node tc(1) # linked list.go:68:2
+.   .   .   DOTPTR main.next PTR-*Node tc(1) # linked list.go:71:14
+.   .   .   .   NAME-main.curr esc(no) Class:PAUTO Offset:0 OnStack Used PTR-*Node tc(1) # linked list.go:68:2
+.   BLOCK tc(1) # linked list.go:73:9
+.   BLOCK-List
+.   .   CALLFUNC Walked tc(1) # linked list.go:73:9
+.   .   .   NAME-runtime.printlock Class:PFUNC Offset:0 Used FUNC-func() tc(1)
+.   .   CALLFUNC Walked tc(1) # linked list.go:73:9
+.   .   .   NAME-runtime.printnl Class:PFUNC Offset:0 Used FUNC-func() tc(1)
+.   .   CALLFUNC Walked tc(1) # linked list.go:73:9
+.   .   .   NAME-runtime.printunlock Class:PFUNC Offset:0 Used FUNC-func() tc(1)
